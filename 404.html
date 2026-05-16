@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>404 · layero-sample-hugo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main data-page="404">
+      <h1>404</h1>
+      <p data-assert="404">
+        Кастомная 404-страница. Сейчас edge nginx этого файла не подхватывает —
+        при отсутствии страницы юзер увидит корневой <code>index.html</code>
+        через <code>@spa_fallback</code>. Файл лежит здесь для будущего шага
+        (отдельный фолбек на <code>404.html</code> в S3).
+      </p>
+      <p><a href="/">← на главную</a></p>
+    </main>
+  </body>
+</html>

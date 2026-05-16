@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layero-sample-hugo · home</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main data-page="home">
+      <h1>layero-sample-hugo</h1>
+      <p>
+        SSG-фикстюра в pretty-URL раскладке. Каждый раздел — директория
+        с <code>index.html</code> внутри (так делают Hugo, Jekyll,
+        Eleventy с <code>permalink: pretty</code>, Zola, MkDocs, Docusaurus i18n).
+      </p>
+      <h2>Разделы</h2>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/2026-01-hello/">Blog · 2026-01-hello</a></li>
+        <li><a href="/docs/ru/intro/">Docs · Русский интро</a></li>
+        <li><a href="/docs/en/intro/">Docs · English intro</a></li>
+      </ul>
+      <p data-assert="root">Если вы видите этот текст по URL <code>/</code> — корневой index.html отдан верно.</p>
+    </main>
+  </body>
+</html>
