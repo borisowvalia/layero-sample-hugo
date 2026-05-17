@@ -1,0 +1,5 @@
+# V1 _redirects smoke for Layero edge.
+# Static paths only — no splat/positional substitution yet.
+/old-page         /about/      301
+/redirect-me      /index.html  302
+/legacy/contact   /about/      301

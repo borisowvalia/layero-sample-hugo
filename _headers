@@ -1,0 +1,11 @@
+# V1 _headers smoke for Layero edge.
+# V1 path-match scope: `/*` (catch-all) or exact path. No prefix wildcards yet.
+# Last write per header name wins, so put `/*` first and override below.
+
+/*
+  X-Frame-Options: DENY
+  Strict-Transport-Security: max-age=31536000
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/about/
+  X-Robots-Tag: noindex
