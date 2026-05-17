@@ -1,5 +1,13 @@
-# V1 _redirects smoke for Layero edge.
-# Static paths only — no splat/positional substitution yet.
+# PR6 — exact-path redirects.
 /old-page         /about/      301
 /redirect-me      /index.html  302
 /legacy/contact   /about/      301
+
+# PR9 — prefix-wildcard with :splat substitution.
+# /legacy/docs/foo/bar  →  /docs/foo/bar  (301)
+# /legacy/docs/         →  /docs/         (301)
+/legacy/docs/*    /docs/:splat 301
+
+# Bare prefix without :splat — useful for "shut down a section".
+# /retired/anything    →  /                (301)
+/retired/*        /            301
